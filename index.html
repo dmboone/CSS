@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sandbox</title>
+    <!-- <style>
+        body{
+                    margin: 0;
+        }
+
+        /* Box Model */
+        h1{
+            border-width: 5px;
+            border-style: solid;
+            border-color: #f00;
+
+            /* faster alternative */
+            border: 5px #ff0000 solid;
+
+            padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 70px;
+            padding-left: 90px;
+
+            /* faster altenative */
+            padding: 30px 50px 70px 90px;
+
+             /* 50 top and bottom, 100 left and right */
+            padding: 50px 100px;
+
+            /* all four sides */
+            padding: 100px;
+
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-bottom: 150px;
+            margin-left: 200px;
+
+            margin: 100px auto; /* to center block level elements*/
+            width: 300px;
+            height: 300px;
+
+            /* padding and border are NOT included */
+            box-sizing: content-box;
+
+            /* padding and border included in total width and height */
+            box-sizing: border-box;
+        }
+    </style> -->
+    <!-- <style>
+        /* Pseudo Classes - define special state of an element */
+        a:link { /* state of link before it has been clicked */
+            font-size: 35px;
+            text-decoration: none;
+            color: green;
+        }
+
+        a:visited { /* state of link after it has been clicked */
+            color: goldenrod;
+        }
+
+        a:hover { /* hover state */
+            color: gray;
+        }
+
+        a:active { /* state while link is being clicked */
+            color: skyblue;
+        }
+
+        /* Creating a simple drop down using the hover state */
+        .dropdown-content a {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-content a {
+            display: block;
+        }
+
+        ul {
+            font-size: 40px;
+            list-style-type: none; /* can change bullet style */
+            list-style: none; /* this also works to remove bullets */
+        }
+
+        ul li:first-child{ /* select first child */
+            color: red;
+        }
+
+        ul li:last-child{ /* select last child */
+            color: green;
+        }
+
+        ul li:nth-child(3) { /* select n child */
+            color: blue;
+        }
+        
+        /* Pseudo Elements - style of a specific part of an element */
+        h1::first-letter {
+            font-size: 70px;
+            font-style: italic;
+            color: goldenrod;
+        }
+
+        h1::before { /* inserts content before current content of element */
+            content: "This is a ";
+            color: green;
+        }
+
+        h1::after { /* inserts content after current content of element */
+            content: " of Website";
+            font-size: 50px;
+            color: green;
+        }
+
+    </style> -->
+    <!-- <style>
+        body {
+            margin: 0;
+        }
+        /* Measuring units */
+        h1, p{
+            font-size: 50px;
+            font-size: 3em; /* this is a relative unit measurement based on closest parent element font size */
+            font-size: 3rem; /* this is a relative unit measurement based on the html doc */
+        }
+
+        div {
+            font-size: 10px;
+        }
+
+        /* percentage measurements are based on closest parent element */
+        section {
+            font-size: 30px;
+            background-color: orangered;
+            color: white;
+            /* width: 70%; */
+            height: 100vh; /* relative to viewport height - what you can see */
+            width: 50vw; /* relative to viewport width - what you can see */
+        }
+
+        h1 {
+            /* font-size: 100%; */
+            font-size: 200%;
+            margin: 0;
+        }
+
+        section div {
+            background-color: green;
+            /* width: 50%; */
+            width: 50vw;
+        }
+    </style> -->
+    <style>
+        .container{
+            background-color: orangered;
+            width: 700px;
+            height: 600px;
+        }
+
+        .box{
+            width: 350px;
+            height: 100px;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .box-1{
+            background-color: green;
+            position: absolute;
+        }
+
+        .box-2{
+            background-color: royalblue;
+            position: relative;
+            top: 20px; /* can also do right and negative value s*/
+            left: 20px; /* can also do bottom and negative values */
+            width: 500px;
+            height: 300px;
+        }
+
+        .box-3{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Box model</h1> -->
+
+    <!-- <a href="https://www.google.com">Click Here</a>
+
+    <div class="dropdown">
+        <a href="#">Items</a>
+        <div class="dropdown-content">
+            <a href="#">item 1</a>
+            <a href="#">item 1</a>
+            <a href="#">item 1</a>
+        </div>
+    </div>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    -->
+    
+    <!-- Measurement Units -->
+    <!-- <h1>Heading</h1>
+
+    <div>
+        <p>Paragraph</p>
+    </div> 
+
+    <section>
+        <h1>Heading</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Expedita nulla vero excepturi maiores hic repudiandae 
+                numquam beatae. Perspiciatis similique autem optio repellendus 
+                velit eos adipisci, provident labore culpa commodi. Ratione?</p>
+        </div>
+    </section> -->
+
+    <div class="container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+    </div>
+</body>
+</html>
